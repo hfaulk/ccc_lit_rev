@@ -1,4 +1,4 @@
-nav > ul {
+nav>ul{
     background: rgba(211, 211, 211, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 1em;
@@ -7,20 +7,20 @@ nav > ul {
     position: fixed;
     top: 37%;
     left: 1em;
-    width: 4em;
+    width: 6em;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-nav > ul > li {
+nav>ul>li{
     margin: 0;
     padding: 0;
     display: block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a{
     text-decoration: none;
     color: black;
     font-size: 1.5em;
@@ -28,21 +28,50 @@ nav > ul > li > a {
     width: 100%;
     text-align: center;
     padding: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     box-sizing: border-box;
     border-radius: 0.1em;
     position: relative;
 }
 
-nav > ul > li > a span {
+nav>ul>li>a>span{
     display: inline-block;
     transition: transform 0.2s ease-in-out;
     transform-origin: center;
 }
 
-nav > ul > li > a:hover {
-    background: grey;
+nav>ul>li>a:hover{
+    background: lightgrey;
 }
 
-nav > ul > li > a:hover span {
+nav>ul>li>a:hover>span{
     transform: scale(1.2);
 }
+
+@media(max-width: 768px){
+    nav>ul{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: auto;
+        height: 5em;
+        top: 1em;
+        left: 1em;
+        right: 1em;
+    }
+
+    nav>ul>li{
+        display:flex;
+        width: 100%;
+    }
+
+    nav>ul>li>a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2em;
+    }
+}
+
