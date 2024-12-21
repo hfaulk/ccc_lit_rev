@@ -49,7 +49,7 @@ nav>ul>li>a:hover>span{
     transform: scale(1.2);
 }
 
-@media(max-width: 768px){
+@media(orientation: portrait){
     nav>ul{
         display: flex;
         flex-direction: row;
