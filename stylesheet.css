@@ -55,11 +55,11 @@ nav>ul>li>a:hover>span{
     transform: scale(1.2);
 }
 
-@media(orientation: portrait){
+@media(orientation: portrait) or (max-height: 400px){
     nav>ul{
         flex-direction: row;
         width: auto;
-        height: 5em;
+        height: 7em;
         right: 1em;
     }
 
